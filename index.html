@@ -15,7 +15,6 @@
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
   </head>
   <body>
-
     <!-- Sidebar -->
       <section id="sidebar">
         <div class="inner">
@@ -105,32 +104,44 @@
                 <section id="cell1">
                   <span class="icon major fa-code"></span>
                   <h3>Customer Insight</h3>
-                  <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+                  <p>
+                    Starting with a bare canvas or sample product, it all begins the process to illustrate the client’s wants, needs and preferred choice of style.
+                  </p>
                 </section>
                 <section id="cell22">
                   <span class="icon major fa-lock"></span>
                   <h3>Right Product, Right Material</h3>
-                  <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+                  <p>
+                    From a wide range of fabric samples, the customer chooses the most appropriate material for their prototype.
+                  </p>
                 </section>
                 <section id="cell33">
                   <span class="icon major fa-cog"></span>
                   <h3>Showcase</h3>
-                  <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+                  <p>
+                    Changes will be adjusted to the prototype to meet client’s satisfaction. After all, the uniforms will be sent for production.
+                  </p>
                 </section>
                 <section id="cell4">
                   <span class="icon major fa-desktop"></span>
                   <h3>Make It Perfect</h3>
-                  <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+                  <p>
+                    Adding the final touches to the finished product, the high quality product are finally wrapped and all ready to go. The packaging meets the destination environment regulatory.
+                  </p>
                 </section>
                 <section id="cell5">
                   <span class="icon major fa-chain"></span>
                   <h3>Made By Chance</h3>
-                  <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+                  <p>
+                    Hear about the testimonial of Chance’s clients and take a glance into what operate behind the scenes of their individual experience.
+                  </p>
                 </section>
                 <section id="cell66">
                   <span class="icon major fa-diamond"></span>
                   <h3>Collection</h3>
-                  <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+                  <p>
+                    Shirt, T-Shirt, Jacket, Others.
+                  </p>
                 </section>
               </div>
               <ul class="actions">
@@ -143,26 +154,29 @@
           <section id="three" class="wrapper style1 fade-up">
             <div class="inner">
               <h2>Get In Touch</h2>
-              <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+              <p>
+                Drop us your need, we will finish the rest of your stories. We have contact point at Vietnam, Singapore, Malaysia.
+              </p>
               <div class="split style1">
                 <section>
-                  <form method="post" action="#">
+                  <form id="gform" name="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScmhKgtlM1hntWLCstkAEkm2tcpbYC79GEeABZRKqVFtNRT5w/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
                     <div class="field half first">
                       <label for="name">Name</label>
-                      <input type="text" name="name" id="name" />
+                      <input type="text" name="entry.1572496581" id="entry.1572496581" />
                     </div>
                     <div class="field half">
                       <label for="email">Email</label>
-                      <input type="text" name="email" id="email" />
+                      <input type="text" name="emailAddress" id="emailAddress" />
                     </div>
                     <div class="field">
                       <label for="message">Message</label>
-                      <textarea name="message" id="message" rows="5"></textarea>
+                      <textarea name="entry.1311189274" id="entry.1311189274" rows="5"></textarea>
                     </div>
                     <ul class="actions">
-                      <li><a href="" class="button submit">Send Message</a></li>
+                      <li><input type="submit" value="Send Message" class="button submit" /></li>
                     </ul>
                   </form>
+                  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
                 </section>
                 <section>
                   <ul class="contact">
@@ -187,8 +201,8 @@
                     <li>
                       <h3>Phone</h3>
                       <span>
-                        (+84) 9082 089 48<br />
-                        (+65) 8323 5472
+                        Vietnam:   (+84) 9082 089 48<br />
+                        Singapore: (+65) 8323 5472
                       </span>
                     </li>
                     <li>
@@ -228,6 +242,13 @@
       <script src="assets/js/util.js"></script>
       <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
       <script src="assets/js/main.js"></script>
-
+      <script type="text/javascript">var submitted=false;</script>
+      <script type="text/javascript">
+        $('#gform').on('submit', function(e) {
+          $('#gform *').fadeOut('slow', function() {
+            $('#gform').html('Your message has been sent!');
+          });
+        });
+      </script>
   </body>
 </html>
